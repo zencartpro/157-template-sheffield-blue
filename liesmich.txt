@@ -1,0 +1,198 @@
+﻿Responsives Template Sheffield Blue 2.4.0 für Zen Cart 1.5.7 deutsch
+
+Anpassung des Templates Sheffield Blue (https://www.zen-cart.com/downloads.php?do=file&id=1744) von picaflor-azul für die deutsche Zen Cart Version 1.5.7
+Dezember 2022
+www.webchills.at
+
+Demo des Templates:
+https://sheffieldblue157.zencartdemo.at
+
+Originaltemplate von:
+www.picaflor-azul.com
+
+
+Diese Version ist ausschließlich für die deutsche Zen Cart Version 1.5.7f geeignet!
+
+Changelog Version 2.4.0 - Dezember 2022
+- Anpassungen für Zen Cart 1.5.7f deutsch und PHP 8
+- alle verwendeten Javascripts aktualisiert
+- Font Awesome 6.2.1 lokal eingebunden
+- fehlende Anpassungen in Artikeltypentemplates ergänzt
+
+Änderungen gegenüber dem Original Template:
+- Fehler im Installer behoben
+- Installer multilanguagefähig gemacht, so dass alle Konfigurationsoptionen in der deutschen Administration auf deutsch erscheinen
+- deutsche Sprachdateien hinzugefügt
+- AddThis entfernt (Wer AddThis in seinem Onlineshop einsetzt sollte sich das hier mal durchlesen: http://www.sueddeutsche.de/digital/internet-tracking-cookies-waren-gestern-1.2058685)
+- Anpassung der modifizierten Corefiles an die deutsche Zen Cart Version
+- Flexibles Footermenü auf multilanguage geändert
+- Fehler auf der Startseite behoben
+- Javascripts alle auf https umgestellt, so dass das Template auch in reinen SSL Shops läuft
+- Footermenü mit nützlichen Links voreingestellt
+- Zen Colorbox entfernt, da seit 1.5.5 bereits enthalten
+- Anleitung aktualisiert
+- Uninstaller hinzugefügt
+
+
+Dieses Template beinhaltet zahlreiche Zusatzmodule:
+- Bewertungen direkt auf der Artikeldetailseite
+- Betreff Feld auf der Kontaktseite
+- Flexibles Footer Menü
+- Define Page About Us (Über uns)
+
+Sollten im Shop bereits diese Module vorhanden sein, deinstallieren Sie diese Module komplett, bevor Sie das Template installieren!
+
+Bevor Sie Ihren Shop weiter modifizieren, stellen Sie erst sicher, dass Sie wirklich die aktuelle deutsche Zen Cart Version 1.5.7f verwenden.
+
+
+NEUINSTALLATION
+
+WICHTIGE HINWEISE
+
+Erst in einem Testsystem installieren und nicht direkt in einem Liveshop!
+
+Vor der Installation dieses Templates machen Sie eine komplette Sicherung Ihrer Shopdateien und Ihrer Datenbank!
+
+Sie haben eine Sicherung gemacht?
+Sie haben einen Testshop einsatzbereit?
+
+Dann lesen Sie weiter.
+
+Wenn Sie Sheffield Blue bereits in einem 1.5.6 Shop aktiv haben und diesen auf 1.5.7 updaten wollen, dann führen Sie zunächst ein Update auf 1.5.7f durch.
+Danach entfernen Sie wie ganz unten unter DEINSTALLATION beschrieben mit der uninstall.sql im Ordner UNINSTALL alle Datenbankeinträge des Templates.
+Danach gehen Sie so vor wie unter NEUINSTALLATION beschrieben und richten Sheffield Blue neu ein.
+
+Sollten Sie in Ihrem Shop bereits das Template Winchester oder Winchester Black installiert haben und nun auf Sheffield Blue umsteigen wollen, dann entfernen Sie zunächst Winchester oder Winchester Black komplett, bevor Sie Sheffield Blue installieren!
+Gleiches gilt für andere responsive Templates dieser Art wie z.B. Stirling Grand.
+Diese Templates bringen teilweise dieselben Zusatzfunktionalitäten mit und es wird zu Problemen führen, wenn Sie mehrere Templates dieser Art gleichzeitig zu installieren versuchen.
+Bevor Sie Sheffield Blue installieren, entfernen Sie also zunächst falls installiert die Templates Winchester Black, Stirling Grand, Winchester Responsive oder andere picaflor-azul Templates!
+
+Die Installation erfolgt in folgenden Schritten, halten Sie diesen Ablauf ein:
+
+1)
+Der Ordner GEAENDERTE DATEIEN enthält die von diesem Template geänderten Originaldateien. 
+Benennen Sie den Ordner DEINADMIN auf den Namen Ihres Adminverzeichnisses um.
+Laden Sie diese Dateien nicht einfach so hoch, sonst gehen Änderungen, die Sie in diesen Dateien in Ihrem Shop vielleicht bereits einmal vorgenommen haben verloren.
+Stattdessen vergleichen Sie den Inhalt dieser Dateien mit einem Tool wie WinMerge oder Beyond Compare mit den Dateien Ihres Shops und nehmen falls nötig die Änderungen manuell vor.
+Danach den Inhalt in der vorgegebenen Struktur ins Shopverzeichnis hochladen
+
+2)
+Die Ordner/Dateien im Ordner NEUE DATEIEN in der vorgegebenen Struktur ins Shopverzeichnis hochladen, dadurch werden keine bestehenden Dateien überschrieben.
+Hinweis: Die Dateien in includes/templates/responsive_sheffield_blue und includes/modules/responsive_sheffield_blue müssen Sie möglicherweise später nochmal mit den entsprechenden Dateien von Modulen vergleichen, die Sie bereits im Shop integriert haben und deren Änderungen nachziehen.
+
+3)
+In der Zen Cart Administration unter Tools Templates das neue Sheffield Blue aus dem Dropdown auswählen und aktivieren.
+
+4)
+Nun im Admin auf irgendeinen Menüpunkt clicken, Sie sollten dann oben links zwei grüne Erfolgsmeldungen sehen, dass die nötigen Datenbankeinträge erfolgreich vorgenommen wurden
+
+5)
+Unter Tools Boxlayout clicken Sie nun auf den Button Zurücksetzen, dadurch werden die von diesem Template verwendeten Sideboxen automatisch voreingestellt.
+
+6)
+Stellen Sie nun die Sideboxen ein, die Sie anzeigen wollen und stellen Sie dabei die Einstellung Show Box @ Min-Width immer auf Aus.
+Diese Einstellung regelt die Anzeige von Sideboxen für mobile Geräte und für die sollten die Sideboxen immer aus sein.
+
+____________________________________________________________________________________________________
+
+
+Konfigurationsmöglichkeiten / Anpassung an eigene Wünsche
+
+____________________________________________________________________________________________________
+
+
+Logo austauschen
+includes/templates/responsive_sheffield_blue/images/logo.png überschreiben
+Größe des Logos sollte so wie in der Demo sein: 271 Pixel x 51 Pixel
+
+____________________________________________________________________________________________________
+
+
+Slogan unter Logo ändern
+includes/languages/german/responsive_sheffield_blue/header.php
+define('HEADER_SALES_TEXT', 'Demo Sheffield Blue');
+
+____________________________________________________________________________________________________
+
+
+Konfiguration > Responsive Sheffield Blue Konfiguration
+
+Slideshow auf der Startseite
+Standardmäßig aktiv
+Homepage Slideshow > true
+
+Weitere Einstellungsmöglichkeiten sind dort erklärt
+
+
+____________________________________________________________________________________________________
+
+Wie ändere ich Bilder und Links in den Slideshows auf der Startseite?
+
+Die Slideshow oben ist admingesteuert. Unter Tools > Bannermanager die Banner mit der Bannergruppe homepageslide entsprechend ändern.
+Unter Banner URL die Dummy Raute rausnehmen und den gewünschten Link eintragen
+Zum Austausch der Bilder entweder über den Bannermanager andere hochladen oder einfach per FTP die mitgelieferten Beispielbilder in images/banners überschreiben. 
+Diese Bannerbilder müssen exakt die Größe 1300x500 Pixel haben
+____________________________________________________________________________________________________
+
+
+Links im Footer
+Der Footerbereich ist komplett admingesteuert
+Tools > Flexibles Footer Menü
+
+____________________________________________________________________________________________________
+
+
+Diverse Texte
+Inhalt kann geändert werden in:
+includes/languages/german/extra_definitions/responsive_sheffield_blue/responsive_sheffield_blue_defines.php
+Für englische Version entsprechend in
+includes/languages/english/extra_definitions/responsive_sheffield_blue/responsive_sheffield_blue_defines.php
+
+____________________________________________________________________________________________________
+
+Social Media Links rechts unten
+Voreingestellt ist folgender Code :
+<a href="https://www.facebook.com/#" target="_blank"><i class="fab fa-facebook"></i></a><a href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter"></i></a><a href="http://www.pinterest.com/#" target="_blank"><i class="fab fa-pinterest"></i></a><a href="https://www.youtube.com/#" target="_blank"><i class="fab fa-youtube"></i></a><a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+Wichtig:
+Dieser Code lässt sich über Tools > Flexibles Footer Menü nur ändern, wenn dort Interner HTML Editor zunächst auf Nur-Text umgestellt wird!
+Also erst im Flexiblen Footer Menü den Editor auf Nur-Tet umschalten.
+Dann wird der Code angezeigt und es können die Links auf die eigenen Social Media Sites geändert werden.
+
+Die Anzeige dieser Social Media Buttons ist an dieser Stelle des Templates exakt so vorgesehen. Diese Buttons sind keine Grafiken, sondern werden per Font Awesome Stylesheet erzeugt. Wenn hier irgendwelche Grafiken reinkopiert werden oder der Code sonstwie geändert wird, dann wird das nicht zum Erfolg führen.
+
+Wenn meine Facebook Page die Adresse https://www.facebook.com/zuck hat, dann ersetze ich den Dummy Link https://www.facebook.com/# mit https://www.facebook.com/zuck und lasse den Code ansonsten völlig unverändert:
+
+<a href="https://www.facebook.com/zuck" target="_blank"><i class="fab fa-facebook"></i></a><a  href="https://twitter.com/#" target="_blank"><i class="fab fa-twitter"></i></a><a  href="http://www.pinterest.com/#" target="_blank"><i class="fab fa-pinterest"></i></a><a  href="https://www.youtube.com/#" target="_blank"><i class="fab fa-youtube"></i></a><a href="#"  target="_blank"><i class="fab fa-instagram"></i></a>
+
+Nach demselben Prinzip ändere ich die Links bei Twitter, Pinterest, Youtube und Instagram
+
+Ich habe nur Facebook und Youtube?
+
+Dann entferne ich die anderen Aufrufe und ändere auf:
+
+<a href="https://www.facebook.com/zuck" target="_blank"><i  class="fab fa-facebook"></i></a><a  href="https://www.youtube.com/zuck" target="_blank"><i class="fab  fa-youtube"></i></a>
+
+
+____________________________________________________________________________________________________
+
+DEINSTALLATION
+____________________________________________________________________________________________________
+
+WICHTIG:
+Dieses Template verwendet einen Autoinstaller, der die Templatekonfiguration automatisch beim Aufruf des Admins installiert.
+Wenn Sie das Template komplett entfernen wollen, dann halten Sie dazu exakt folgenden Ablauf ein:
+
+1)
+Alle von diesem Template neu hizugefügten Dateien vom Server löschen.
+Achten Sie darauf, dass folgende Dateien und Ordner unbedingt gelöscht sind, bevor Sie die weiteren Schritte durchführen:
+DEINADMIN/includes/autoloaders/config.responsive_sheffield_blue.php
+DEINADMIN/includes/init_includes/init_responsive_sheffield_blue.php
+DEINADMIN/includes/installers/responsive_sheffield_blue
+
+2)
+Alle von diesem Template geänderten Dateien wieder mit den entsprechenden 1.5.7f Originaldateien bzw. den entsprechenden Dateien Ihres zuvor angelegten Backups ersetzen
+
+3)
+Die uninstall.sql im Ordner UNINSTALL mit einem Texteditor öffnen, Inhalt kopieren und ins Eingabefeld unter Tools > SQL Patches installieren einfügen und absenden
+Dadurch werden alle neuen Datenbankeinträge, die dieses Template vorgenommen hat entfernt.
+Das im Shop aktive Template wird auf das 1.5.7 Standardtemplate responsive_classic zurückgestellt mit dessen Standardeinstellungen.
