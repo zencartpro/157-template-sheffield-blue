@@ -14,6 +14,16 @@ h4, h5, h6, LABEL, h4.optionName, LEGEND, ADDRESS, .sideBoxContent, .larger{font
 .clearBoth {clear:both;}
 HR {margin-top: 0.5em;border:none;border-bottom:1px solid #dbdbce;margin-bottom:30px;margin-top:30px;}
 
+#indexCategories
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
 /*bof form elements*/
 CODE {font-family: arial, verdana, helvetica, sans-serif;font-size: 1em;}
 FORM, SELECT, INPUT {display: inline;margin: 0.1em;;}
@@ -263,7 +273,8 @@ div#productsListingListingBottomLinks{margin-top:10px;}
 #gridSorter {background:#e2e3e8;background: -moz-linear-gradient(top, #f8f8f8, #e2e3e8);background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f8f8), to(#e2e3e8));background: -o-linear-gradient(top, #f8f8f8, #e2e3e8);margin:10px 0 0 0 ;width:100%;text-align:center;text-transform:uppercase;color:#f99d30;font-weight:bold;}
 .more-info{float:left;}
 .more-info a{color:#fff;}
-.centerBoxContentsAlsoPurch, .centerBoxContentsProducts, .centerBoxContentsNew, .centerBoxContentsFeatured, .centerBoxContentsSpecials{border:1px solid #dbdbce;background:#f7f7f7;padding:20px 0px;width:30% !important;transition:background 2s ease; -webkit-transition:background 2s ease;-moz-transition: background 2s ease;  -o-transition:background 2s ease;text-align:center;margin-left:15px;margin-bottom:20px;min-height:350px;}
+
+.centerBoxContentsAlsoPurch, .centerBoxContentsProducts, .centerBoxContentsNew, .centerBoxContentsFeatured, .centerBoxContentsSpecials{border:1px solid #dbdbce;background:#f7f7f7;padding:20px 0px;width:30% !important;transition:background 2s ease; -webkit-transition:background 2s ease;-moz-transition: background 2s ease;  -o-transition:background 2s ease;text-align:center;margin-left:15px;margin-bottom:20px;min-height:480px;}
 .listingProductImage{margin:0 auto;}
 .centerBoxContentsAlsoPurch:hover, .centerBoxContentsProducts:hover, .centerBoxContentsNew:hover, .centerBoxContentsFeatured:hover, .centerBoxContentsSpecials:hover{border:1px solid #dbdbce;background:#f4f4f4;}
 .itemTitle{font-weight:normal;color:#787878;min-height:50px;padding-left:20px;padding-right:20px;}
