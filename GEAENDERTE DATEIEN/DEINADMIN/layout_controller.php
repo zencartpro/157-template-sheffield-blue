@@ -309,6 +309,18 @@ if (!empty($_GET['action'])) {
                   default: $in_status_single = true;
                     $out_status_single = false;
                 }
+		// bof sheffield blue template
+		switch ($bInfo->show_box_min_width) {
+                  case '0': $in_status_minwidth = false;
+                    $out_status_minwidth = true;
+                    break;
+                  case '1': $in_status_minwidth = true;
+                    $out_status_minwidth = false;
+                    break;
+                  default: $in_status_minwidth = false;
+                    $out_status_minwidth = true;
+                }
+		// eof sheffield blue template
 
                 $heading[] = array('text' => '<h4>' . TEXT_INFO_HEADING_EDIT_BOX . '</h4>');
 
@@ -322,7 +334,7 @@ if (!empty($_GET['action'])) {
                 $contents[] = array('text' => '<br>' . zen_draw_label(TEXT_INFO_LAYOUT_BOX_STATUS_SINGLE, 'layout_box_status_single' , 'class="control-label"') . '<div class="radio"><label>' . zen_draw_radio_field('layout_box_status_single', '1', $in_status_single) . TEXT_ON . '</label></div><div class="radio"><label>' . zen_draw_radio_field('layout_box_status_single', '0', $out_status_single) . TEXT_OFF . '</label></div>');
                 
                 // bof sheffield blue template
-                $contents[] = array('text' => '<br />' . 'Show this Box @ Min-Width' . '<br />' . zen_draw_radio_field('show_box_min_width', '1', $in_status_minwidth) . TEXT_ON . zen_draw_radio_field('show_box_min_width', '0', $out_status_minwidth) . TEXT_OFF);
+                $contents[] = array('text' => '<br>' . 'Show this Box @ Min-Width' . '<br>' . zen_draw_radio_field('show_box_min_width', '1', $in_status_minwidth) . TEXT_ON . zen_draw_radio_field('show_box_min_width', '0', $out_status_minwidth) . TEXT_OFF);
                 // eof sheffield blue template
                 
                 $contents[] = array('align' => 'text-center', 'text' => '<br><button type="submit" class="btn btn-primary">' . IMAGE_UPDATE . '</button> <a href="' . zen_href_link(FILENAME_LAYOUT_CONTROLLER, $cur_page . '&cID=' . $bInfo->layout_id . '&layout_box_name=' . $bInfo->layout_box_name) . '" class="btn btn-default" role="button">' . IMAGE_CANCEL . '</a>');
