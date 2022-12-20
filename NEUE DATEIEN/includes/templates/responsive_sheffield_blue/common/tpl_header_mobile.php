@@ -52,12 +52,14 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
     if (zen_is_logged_in() && !zen_in_guest_checkout()) {
 ?>
      <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa-solid fa-home" title="Home"></i><span class="tp-hide"><?php echo HEADER_TITLE_CATALOG; ?></span></a><span class="tp-hide"> | </span></li>
+     	 <li><a href="<?php echo zen_href_link(FILENAME_ADVANCED_SEARCH, '', 'SSL'); ?>"><i class="fa fa-search" title="Search"></i><span class="tp-hide"><?php echo HEADER_TITLE_CATALOG; ?></span></a><span class="tp-hide"> | </span></li>
     <li><a href="<?php echo zen_href_link(FILENAME_LOGOFF, '', 'SSL'); ?>"><i class="fa-solid fa-power-off" title="Log Off"></i><span class="tp-hide"><?php echo HEADER_TITLE_LOGOFF; ?></span></a><span class="tp-hide"> | </span></li>
     <li><a href="<?php echo zen_href_link(FILENAME_ACCOUNT, '', 'SSL'); ?>"><i class="fa-solid fa-user" title="My Account"></i><span class="tp-hide"><?php echo HEADER_TITLE_MY_ACCOUNT; ?></span></a><span class="tp-hide"> | </span></li>
 <?php
       } else if (STORE_STATUS == '0') {
 ?>
    <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa-solid fa-home" title="Home"></i><span class="tp-hide"><?php echo HEADER_TITLE_CATALOG; ?></span></a><span class="tp-hide"> | </span></li>
+   	 <li><a href="<?php echo zen_href_link(FILENAME_ADVANCED_SEARCH, '', 'SSL'); ?>"><i class="fa fa-search" title="Search"></i><span class="tp-hide"><?php echo HEADER_TITLE_CATALOG; ?></span></a><span class="tp-hide"> | </span></li>
   <li class="h-login"><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa-solid fa-arrow-right" title="Log In/Register"></i><span class="tp-hide"><?php echo HEADER_TITLE_LOGIN; ?></span></a><span class="tp-hide"> | </span></li>
 <?php } ?>
 

@@ -1,10 +1,10 @@
 <?php
 /**
- * @package languageDefines
- * @copyright Copyright 2003-2016 Zen Cart Development Team
+ * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
- * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: product_info.php 730 2015-05-02 09:49:16Z webchills $
+ * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
+ * @version $Id: product_info.php 2022-12-20 17:05:14Z webchills $
  */
 
 define('TEXT_PRODUCT_NOT_FOUND', 'Sorry, the product was not found.');
