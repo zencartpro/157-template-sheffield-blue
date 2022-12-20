@@ -98,8 +98,8 @@ input[type=file]{width:100%;}
 #navBreadCrumb {margin:18px 0 0 0;}
 #navMainSearch {margin:0;float:right;position:relative;top:52px;z-index:11;}
 .search-header-box {padding-left:10px;width:170px;height:32px;color:#444;border:1px solid #230f0f;text-transform:lowercase;font-size:75%;-moz-border-radius: 5px;opacity:0.6;filter: alpha(opacity=60);}
-input.cssButton.submit_button.button.button_search{cursor:pointer;padding:6px 10px;background:#004d76;color:#fff;position:relative;top:6px;font-family: 'FontAwesome';font-size:180%;margin-left:-3px;}
-input.button_search:hover{padding:6px 10px;background:#000;color:#fff;position:relative;top:6px;font-family: 'FontAwesome';font-size:180%;margin-left:-3px;}
+#navMainSearch input.cssButton.submit_button.button.button_search{cursor:pointer;padding:6px 10px;background:#004d76;color:#fff;position:relative;top:6px;font-family: 'FontAwesome';font-size:180%;margin-left:-3px;}
+#navMainSearch input.button_search:hover{padding:6px 10px;background:#000;color:#fff;position:relative;top:6px;font-family: 'FontAwesome';font-size:180%;margin-left:-3px;}
 #navMainSearch-mobile{display:none;}
 #header-cart{font-size:140%;text-align:left;}
 #cur-lan-header{float:right;margin-top:0px;margin-right:65px;position:relative;top:50px;}

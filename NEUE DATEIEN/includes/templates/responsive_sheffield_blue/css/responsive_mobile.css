@@ -300,9 +300,10 @@ tr.tableHeading{display:none;}
 #shippingEstimatorContent .button_update{float:none;width:95% !important;margin-top:30px;}
 fieldset{border:none;border-bottom:1px solid #dbdbce;padding:5px;padding-bottom:20px;}
 legend{border:none;font-size:130%;margin-left:0;margin-bottom:0;padding:0;color:#1f4f7d;background:none;line-height:25px;}
-#loginDefault .forward, #loginDefault .back{float:none;}
+#loginDefault .forward, #loginDefault .back{float:none; width:100%;}
+
 #loginDefault .button_login, #loginDefault .button_submit{width:90% !important;margin-left:0;height:45px;}
-#loginDefault input[type=text], #loginDefault select, #loginDefault input[type=password]{width:88%;}
+#loginDefault input[type=text], #loginDefault select, #loginDefault input[type=password], #loginDefault input[type=email]{width:90%;}
 .alert{position:relative;}
 .contact-left, .contact-right{float:none;width:100%;}
 #contactUsDefault input[type=submit]{width:95% !important;margin:35px auto 0 20px;position:relative;left:20px;}
