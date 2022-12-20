@@ -27,8 +27,8 @@ html[xmlns] .slides {display: block;}
 /* Direction Nav */
 .flex-direction-nav {height: 0;}
 .flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; position: absolute; top: 50%; z-index: 1000; cursor: pointer; text-indent: -9999px;}
-.flex-direction-nav .flex-next {background: url(../images/right-arrow.png) no-repeat; right: -49px; z-index: 100;}
-.flex-direction-nav .flex-prev {background: url(../images/left-arrow.png) no-repeat; left: -49px; z-index: 100;}
+.flex-direction-nav .flex-next {background:none;}
+.flex-direction-nav .flex-prev {background:none;}
 .flex-direction-nav .flex-disabled {display: none;}
 /* Pause/Play */
 .flex-pauseplay a { display: block; width: 20px; height: 20px; position: absolute; bottom: 5px; left: 10px; opacity: 0.8; z-index: 10; overflow: hidden; cursor: pointer; color: #000; }
@@ -46,8 +46,8 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
-.banner {left: 50%;margin-left: -392px;	position: absolute;height: 100%;max-width: 1600px;width: 100%;top: 0;z-index: 1;}
-.banner span {background-color: rgba(255, 255, 255, 0.2);color: #000;bottom: 0px;height: auto;line-height: normal;text-indent: 18px;position: absolute;font-size:200%;width: 100%;padding: 15px 0;}
+.banner {left: 50%;margin-left: -666px;	position: absolute;height: 100%;max-width: 1600px;width: 100%;top: 0;z-index: 1;}
+.banner span {background-color: rgba(255, 255, 255, 0.7);color: #000;bottom: 0px;height: auto;line-height: normal;text-indent: 18px;position: absolute;font-size:200%;width: 100%;padding: 15px 0;}
 .flexslider .slides li {position:relative;}
 .flex-caption {position:absolute;left:0;right:0;bottom:0;background:#000;z-index:1;padding:5px;}
 
