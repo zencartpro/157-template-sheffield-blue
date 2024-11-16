@@ -57,7 +57,7 @@ if (!defined('IS_ADMIN_FLAG')) {
     $flag_disable_left = true;
   }
   
-  if (in_array($current_page_base,explode(",",'create_account,no_account,privacy,conditions,widerrufsrecht,products_new,specials,featured_products,products_all')) ) {
+  if (in_array($current_page_base,explode(",",'create_account,no_account,privacy,conditions,widerrufsrecht,products_new,specials,featured_products,products_all,product_info,ask_a_question')) ) {
     $flag_disable_right = true;    
   }
 

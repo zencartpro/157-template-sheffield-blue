@@ -25,3 +25,4 @@ Anpassung des Templates Sheffield Blue von picaflor-azul für die deutsche Zen C
 * Anleitung aktualisiert
 * Uninstaller hinzugefügt
 * Twitter durch Bluesky ersetzt
+* Font auf Arimo geändert
