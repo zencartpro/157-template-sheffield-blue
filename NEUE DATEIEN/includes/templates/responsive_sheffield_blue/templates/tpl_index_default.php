@@ -2,14 +2,15 @@
 /**
  * Page Template
  *
- * Main index page<br />
+ * Main index page
  * Displays greetings, welcome text (define-page content), and various centerboxes depending on switch settings in Admin<br />
  * Centerboxes are called as necessary
  *
  * @package templateSystem
- * @copyright Copyright 2003-2024 Zen Cart Development Team
+ * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
- * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
+ * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
  * @version $Id: tpl_index_default.php for Sheffield Blue 2024-11-16 15:49:16Z webchills $
  */
 ?>

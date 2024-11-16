@@ -2,7 +2,7 @@
 /**
  * Page Template
  * Zen Cart German Specific
- * Loaded by index.php?main_page=site_map <br />
+ * Loaded by index.php?main_page=site_map
  * Displays site-map and some hard-coded navigation components
  *
  * @package templateSystem
@@ -10,7 +10,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_site_map_default.php for Sheffield Blue 2022-04-08 16:18:36Z webchills $
+ * @version $Id: tpl_site_map_default.php for Sheffield Blue 2024-11-16 16:18:36Z webchills $
  */
 ?>
 <div class="centerColumn" id="siteMap">

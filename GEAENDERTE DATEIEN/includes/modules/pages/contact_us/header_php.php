@@ -7,7 +7,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: header_php.php for Sheffield Blue 2024-11-16 17:21:16Z webchills $
+ * @version $Id: header_php.php for Sheffield Blue 2024-11-16 17:25:16Z webchills $
  */
 
 // This should be first line of the script:
@@ -36,7 +36,7 @@ if (isset($_GET['action']) && ($_GET['action'] === 'send')) {
 
     $zc_validate_email = zen_validate_email($email_address);
 
-    if ($zc_validate_email && !empty($enquiry) && !empty($name) && $error === false) {
+    if ($zc_validate_email && !empty($enquiry) && !empty($name) && !empty($subject) && $error === false) {
         // if anti-spam is not triggered, prepare and send email:
         if ($antiSpam !== '') {
             $zco_notifier->notify('NOTIFY_SPAM_DETECTED_USING_CONTACT_US', $_POST);

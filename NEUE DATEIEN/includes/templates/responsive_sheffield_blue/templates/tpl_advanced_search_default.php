@@ -33,7 +33,7 @@
 <fieldset class="floatingBox back">
     <h3><?php echo ENTRY_CATEGORIES; ?></h3>
     <div class="floatLeft"><?php echo zen_draw_pull_down_menu('categories_id', zen_get_categories(array(array('id' => '', 'text' => TEXT_ALL_CATEGORIES)), '0' ,'', '1'), $sData['categories_id']); ?></div>
-<br />
+<br>
 <?php echo zen_draw_checkbox_field('inc_subcat', '1', $sData['inc_subcat'], 'id="inc-subcat"'); ?><label class="checkboxLabel" for="inc-subcat"><?php echo ENTRY_INCLUDE_SUBCATEGORIES; ?></label>
 <br class="clearBoth" />
 </fieldset>
