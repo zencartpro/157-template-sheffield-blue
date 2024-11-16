@@ -1,11 +1,11 @@
 <?php
 /**
- * Zen Cart German Specific
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * Zen Cart German Specific (158 code in 157 / zencartpro adaptations)
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: button_names.php 2021-12-27 21:11:14Z webchills $
+ * @version $Id: button_names.php for Sheffield Blue 2024-11-16 10:45:14Z webchills $
  */
 
 
@@ -46,6 +46,8 @@ define('BUTTON_IMAGE_SEND_ANOTHER', 'button_send_another.gif');
 define('BUTTON_IMAGE_SHIPPING_ESTIMATOR', 'button_shipping_estimator.gif');
 define('BUTTON_IMAGE_SOLD_OUT','button_sold_out.gif');
 define('BUTTON_IMAGE_SOLD_OUT_SMALL','button_sold_out_sm.gif');
+define('BUTTON_IMAGE_DROPSHIPPING','button_sold_out.gif');
+define('BUTTON_IMAGE_DROPSHIPPING_SMALL','button_sold_out_sm.gif');
 define('BUTTON_IMAGE_SUBMIT', 'button_submit.gif');
 define('BUTTON_IMAGE_UNSUBSCRIBE', 'button_unsubscribe.gif');
 define('BUTTON_IMAGE_UPDATE', 'button_update.gif');
@@ -62,7 +64,7 @@ define('BUTTON_IMAGE_ASK_A_QUESTION', 'button_ask_a_question.gif');
 define('BUTTON_IMAGE_CREATE_ACCOUNT', 'button_create_account.gif');
 define('BUTTON_IMAGE_LOG_OFF', 'button_logoff.gif');
 /*
- * ALT tags used for buttons (text used for CSS buttons)
+ * ALT text is used as Button Text, or for the ALT tag on image-buttons
  */
 
 
@@ -84,6 +86,8 @@ define('BUTTON_CONTINUE_SHOPPING_ALT', 'Weiter einkaufen');
 define('BUTTON_DELETE_ALT', 'Löschen');
 define('BUTTON_DELETE_SMALL_ALT', 'Löschen');
 define('BUTTON_DOWNLOAD_ALT', 'Download');
+define('BUTTON_DROPSHIPPING_ALT', 'Sonderbestellung');
+define('BUTTON_DROPSHIPPING_SMALL_ALT', 'Sonderbestellung');
 define('BUTTON_EDIT_SMALL_ALT', 'Bearbeiten');
 define('BUTTON_IN_CART_ALT', 'In den Warenkorb ');
 define('BUTTON_LOGIN_ALT', 'Anmelden');
@@ -102,6 +106,7 @@ define('BUTTON_SHIPPING_ESTIMATOR_ALT', 'Voraussichtliche Versandkosten');
 define('BUTTON_SOLD_OUT_ALT', 'Ausverkauft');
 define('BUTTON_SOLD_OUT_SMALL_ALT', 'Ausverkauft');
 define('BUTTON_SUBMIT_ALT', 'Absenden');
+define('BUTTON_SUBMIT_GO_ALT', 'Absenden');
 define('BUTTON_UNSUBSCRIBE', 'Abbestellen');
 define('BUTTON_UPDATE_ALT', 'Aktualisieren');
 define('BUTTON_VIEW_SMALL_ALT', 'Anzeigen');

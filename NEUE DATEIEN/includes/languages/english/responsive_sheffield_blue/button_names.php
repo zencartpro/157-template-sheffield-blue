@@ -1,11 +1,11 @@
 <?php
 /**
- * Zen Cart German Specific
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * Zen Cart German Specific (158 code in 157 / zencartpro adaptations)
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: button_names.php 2021-12-27 21:10:24Z webchills $
+ * @version $Id: button_names.php for Sheffield Blue 2024-11-16 10:46:24Z webchills $
  */
 
 
@@ -46,6 +46,8 @@ define('BUTTON_IMAGE_SEND_ANOTHER', 'button_send_another.gif');
 define('BUTTON_IMAGE_SHIPPING_ESTIMATOR', 'button_shipping_estimator.gif');
 define('BUTTON_IMAGE_SOLD_OUT','button_sold_out.gif');
 define('BUTTON_IMAGE_SOLD_OUT_SMALL','button_sold_out_sm.gif');
+define('BUTTON_IMAGE_DROPSHIPPING','button_sold_out.gif');
+define('BUTTON_IMAGE_DROPSHIPPING_SMALL','button_sold_out_sm.gif');
 define('BUTTON_IMAGE_SUBMIT', 'button_submit.gif');
 define('BUTTON_IMAGE_UNSUBSCRIBE', 'button_unsubscribe.gif');
 define('BUTTON_IMAGE_UPDATE', 'button_update.gif');
@@ -60,7 +62,7 @@ define('BUTTON_IMAGE_ASK_A_QUESTION', 'button_ask_a_question.gif');
 define('BUTTON_IMAGE_CREATE_ACCOUNT', 'button_create_account.gif');
 define('BUTTON_IMAGE_LOG_OFF', 'button_logoff.gif');
 /*
- * ALT tags used for buttons (text used for CSS buttons)
+ * ALT text is used as Button Text, or for the ALT tag on image-buttons
  */
 
 define('BUTTON_CREATE_ACCOUNT_ALT', 'Sign Up');
@@ -81,6 +83,8 @@ define('BUTTON_CONTINUE_SHOPPING_ALT', 'Continue Shopping');
 define('BUTTON_DELETE_ALT', 'Delete');
 define('BUTTON_DELETE_SMALL_ALT', 'Delete');
 define('BUTTON_DOWNLOAD_ALT', 'Download Now');
+define('BUTTON_DROPSHIPPING_ALT', 'Special Order');
+define('BUTTON_DROPSHIPPING_SMALL_ALT', 'Special Order');
 define('BUTTON_EDIT_SMALL_ALT', 'Edit');
 define('BUTTON_IN_CART_ALT', 'Add to Cart');
 define('BUTTON_LOGIN_ALT', 'Sign In');
@@ -99,12 +103,13 @@ define('BUTTON_SHIPPING_ESTIMATOR_ALT', 'Shipping Estimator');
 define('BUTTON_SOLD_OUT_ALT', 'Sold Out');
 define('BUTTON_SOLD_OUT_SMALL_ALT', 'Sold Out');
 define('BUTTON_SUBMIT_ALT', 'Submit');
+define('BUTTON_SUBMIT_GO_ALT','Go');
 define('BUTTON_UNSUBSCRIBE', 'Unsubscribe');
 define('BUTTON_UPDATE_ALT', 'Update');
 define('BUTTON_VIEW_SMALL_ALT', 'View');
-define('BUTTON_WRITE_REVIEW_ALT', 'Write a Review');
+define('BUTTON_WRITE_REVIEW_ALT', 'Write Review');
 define('BUTTON_READ_REVIEWS_ALT', 'Read the Review');
-define('BUTTON_GOTO_PROD_DETAILS_ALT', 'Buy Now');
+define('BUTTON_GOTO_PROD_DETAILS_ALT', 'Product Details');
 define('BUTTON_MORE_REVIEWS_ALT', 'Read More Reviews');
 define('BUTTON_VIEW_ALL_ALT', 'View All');
 define('BUTTON_ASK_A_QUESTION_ALT', 'Ask a Question');

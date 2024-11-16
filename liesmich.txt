@@ -1,29 +1,30 @@
-﻿Responsives Template Sheffield Blue 2.4.0 für Zen Cart 1.5.7 deutsch
+﻿Responsives Template Sheffield Blue 3.0.0 für Zen Cart 1.5.7i deutsch
 
-Anpassung des Templates Sheffield Blue (https://www.zen-cart.com/downloads.php?do=file&id=1744) von picaflor-azul für die deutsche Zen Cart Version 1.5.7
-Dezember 2022
+Anpassung des Templates Sheffield Blue (https://www.zen-cart.com/downloads.php?do=file&id=1744) von picaflor-azul für die deutsche Zen Cart Version 1.5.7i
+November 2024
 www.webchills.at
 
 Demo des Templates:
-https://sheffieldblue157.zencartdemo.at
+https://sheffieldblue.zencartdemo.at
 
 Originaltemplate von:
 www.picaflor-azul.com
 
 
-Diese Version ist ausschließlich für die deutsche Zen Cart Version 1.5.7f geeignet!
+Diese Version ist ausschließlich für die deutsche Zen Cart Version 1.5.7i geeignet!
 
-Changelog Version 2.4.0 - Dezember 2022
-- Anpassungen für Zen Cart 1.5.7f deutsch und PHP 8
+Changelog Version 3.0.0 - November 2022
+- Anpassungen für Zen Cart 1.5.7i deutsch und PHP 8.3.x
 - alle verwendeten Javascripts aktualisiert
-- Font Awesome 6.2.1 lokal eingebunden
+- Font Awesome 6.6.0 lokal eingebunden
 - fehlende Anpassungen in Artikeltypentemplates ergänzt
+- Twitter durch Bluesky ersetzt
 
 Änderungen gegenüber dem Original Template:
 - Fehler im Installer behoben
 - Installer multilanguagefähig gemacht, so dass alle Konfigurationsoptionen in der deutschen Administration auf deutsch erscheinen
 - deutsche Sprachdateien hinzugefügt
-- AddThis entfernt (Wer AddThis in seinem Onlineshop einsetzt sollte sich das hier mal durchlesen: http://www.sueddeutsche.de/digital/internet-tracking-cookies-waren-gestern-1.2058685)
+- AddThis entfernt
 - Anpassung der modifizierten Corefiles an die deutsche Zen Cart Version
 - Flexibles Footermenü auf multilanguage geändert
 - Fehler auf der Startseite behoben
@@ -34,6 +35,7 @@ Changelog Version 2.4.0 - Dezember 2022
 - Uninstaller hinzugefügt
 
 
+
 Dieses Template beinhaltet zahlreiche Zusatzmodule:
 - Bewertungen direkt auf der Artikeldetailseite
 - Betreff Feld auf der Kontaktseite
@@ -42,7 +44,7 @@ Dieses Template beinhaltet zahlreiche Zusatzmodule:
 
 Sollten im Shop bereits diese Module vorhanden sein, deinstallieren Sie diese Module komplett, bevor Sie das Template installieren!
 
-Bevor Sie Ihren Shop weiter modifizieren, stellen Sie erst sicher, dass Sie wirklich die aktuelle deutsche Zen Cart Version 1.5.7f verwenden.
+Bevor Sie Ihren Shop weiter modifizieren, stellen Sie erst sicher, dass Sie wirklich die aktuelle deutsche Zen Cart Version 1.5.7i verwenden.
 
 
 NEUINSTALLATION
@@ -58,7 +60,7 @@ Sie haben einen Testshop einsatzbereit?
 
 Dann lesen Sie weiter.
 
-Wenn Sie Sheffield Blue bereits in einem 1.5.6 Shop aktiv haben und diesen auf 1.5.7 updaten wollen, dann führen Sie zunächst ein Update auf 1.5.7f durch.
+Wenn Sie Sheffield Blue bereits in einem 1.5.6 Shop aktiv haben und diesen auf 1.5.7i updaten wollen, dann führen Sie zunächst ein Update auf 1.5.7i durch.
 Danach entfernen Sie wie ganz unten unter DEINSTALLATION beschrieben mit der uninstall.sql im Ordner UNINSTALL alle Datenbankeinträge des Templates.
 Danach gehen Sie so vor wie unter NEUINSTALLATION beschrieben und richten Sheffield Blue neu ein.
 
@@ -190,9 +192,9 @@ DEINADMIN/includes/init_includes/init_responsive_sheffield_blue.php
 DEINADMIN/includes/installers/responsive_sheffield_blue
 
 2)
-Alle von diesem Template geänderten Dateien wieder mit den entsprechenden 1.5.7f Originaldateien bzw. den entsprechenden Dateien Ihres zuvor angelegten Backups ersetzen
+Alle von diesem Template geänderten Dateien wieder mit den entsprechenden 1.5.7i Originaldateien bzw. den entsprechenden Dateien Ihres zuvor angelegten Backups ersetzen
 
 3)
 Die uninstall.sql im Ordner UNINSTALL mit einem Texteditor öffnen, Inhalt kopieren und ins Eingabefeld unter Tools > SQL Patches installieren einfügen und absenden
 Dadurch werden alle neuen Datenbankeinträge, die dieses Template vorgenommen hat entfernt.
-Das im Shop aktive Template wird auf das 1.5.7 Standardtemplate responsive_classic zurückgestellt mit dessen Standardeinstellungen.
+Das im Shop aktive Template wird auf das 1.5.7i Standardtemplate responsive_classic zurückgestellt mit dessen Standardeinstellungen.

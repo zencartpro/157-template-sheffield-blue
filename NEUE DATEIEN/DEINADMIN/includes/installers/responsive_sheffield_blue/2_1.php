@@ -1,10 +1,10 @@
 <?php
 /**
  * @package Responsive Sheffield Blue
- * @copyright Copyright 2003-2019 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: 2_1.php 2019-09-02 20:40:51Z webchills $
+ * @version $Id: 2_1.php 2024-11-16 07:40:51Z webchills $
  */
 $configuration = $db->Execute("SELECT configuration_group_id FROM " . TABLE_CONFIGURATION_GROUP . " WHERE configuration_group_title = '" . BOX_CONFIGURATION_RESPONSIVE_SHEFFIELD_BLUE . "' ORDER BY configuration_group_id ASC;");
 if ($configuration->RecordCount() > 0) {
@@ -172,7 +172,7 @@ $db->Execute("INSERT  IGNORE INTO " . TABLE_FLEXIBLE_FOOTER_MENU . " (page_id, l
 (13, 1, 'Shipping and Returns', 'index.php?main_page=shippinginfo', '', '', '', 1, 22, 2, NOW(), NOW()),
 (14, 1, 'My Account', 'index.php?main_page=account', '', '', '', 1, 25, 2, NOW(), NOW()),
 (15, 1, '', '', 'Share and Connect', '', '', 1, 4, 4, NOW(), NOW()),
-(16, 1, '', '', '', '', '<a href=\"https://www.facebook.com/#\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a><a href=\"https://twitter.com/#\" target=\"_blank\"><i class=\"fa fa-twitter\"></i></a><a href=\"http://www.pinterest.com/#\" target=\"_blank\"><i class=\"fa fa-pinterest\"></i></a><a href=\"https://www.youtube.com/#\" target=\"_blank\"><i class=\"fa fa-youtube\"></i></a><a href=\"#\" target=\"_blank\"><i class=\"fa fa-instagram\"></i></a>', 1, 41, 4, NOW(), NOW()),
+(16, 1, '', '', '', '', '<a href=\"https://www.facebook.com/#\" target=\"_blank\"><i class=\"fa fa-facebook\"></i></a><a href=\"https://bsky.app\" target=\"_blank\"><i class=\"fa-brands fa-bluesky\"></i></a><a href=\"http://www.pinterest.com/#\" target=\"_blank\"><i class=\"fa fa-pinterest\"></i></a><a href=\"https://www.youtube.com/#\" target=\"_blank\"><i class=\"fa fa-youtube\"></i></a><a href=\"#\" target=\"_blank\"><i class=\"fa fa-instagram\"></i></a>', 1, 41, 4, NOW(), NOW()),
 (17, 1, '', 'index.php?main_page=impressum', NULL, '', NULL, 1, 15, 1, NOW(), NOW()),
 (18, 1, '', 'index.php?main_page=privacy', NULL, '', NULL, 1, 16, 1, NOW(), NOW()),
 (19, 1, '', 'index.php?main_page=conditions', NULL, '', NULL, 1, 17, 1, NOW(), NOW());");

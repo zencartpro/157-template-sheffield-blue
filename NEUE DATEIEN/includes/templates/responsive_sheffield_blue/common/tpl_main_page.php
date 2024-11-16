@@ -36,7 +36,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_main_page.php for Sheffield Blue 2022-12-19 16:49:16Z webchills $
+ * @version $Id: tpl_main_page.php for Sheffield Blue 2024-10-09 16:49:16Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
     die('Illegal Access');
@@ -47,13 +47,17 @@ if (!defined('IS_ADMIN_FLAG')) {
     $flag_disable_right = true;
     $flag_disable_left = true;
   }
+  if ($detect->isTablet()) {
+  	$flag_disable_right = true;
+    $flag_disable_left = true;
+  }
 
   if (in_array($current_page_base,explode(",",'login')) ) {
     $flag_disable_right = true;
     $flag_disable_left = true;
   }
   
-  if (in_array($current_page_base,explode(",",'create_account')) ) {
+  if (in_array($current_page_base,explode(",",'create_account,no_account,privacy,conditions,widerrufsrecht')) ) {
     $flag_disable_right = true;    
   }
 
@@ -162,15 +166,15 @@ if (!isset($flag_disable_left) || !$flag_disable_left) {
   }
 
 
-	if ($detect->isMobile() && !$detect->isTablet() or $detect->isMobile() && !$detect->isTablet() && $_SESSION['layoutType'] == 'mobile' or $detect->isTablet() && $_SESSION['layoutType'] == 'mobile' or $_SESSION['layoutType'] == 'mobile') {
+	if ($detect->isMobile() && !$detect->isTablet() || $detect->isMobile() && !$detect->isTablet() && $_SESSION['layoutType'] == 'mobile' || $detect->isTablet() && $_SESSION['layoutType'] == 'mobile' or $_SESSION['layoutType'] == 'mobile') {
 
     	require($template->get_template_dir('tpl_header_mobile.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header_mobile.php');
 
-} else if ($detect->isTablet() or $detect->isMobile() && $_SESSION['layoutType'] == 'tablet' or $detect->isTablet() && $_SESSION['layoutType'] == 'tablet' or $_SESSION['layoutType'] == 'tablet'){
+} else if ($detect->isTablet() || $detect->isMobile() && $_SESSION['layoutType'] == 'tablet' || $detect->isTablet() && $_SESSION['layoutType'] == 'tablet' || $_SESSION['layoutType'] == 'tablet'){
 
 	require($template->get_template_dir('tpl_header_tablet.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header_tablet.php');
 
-} else if ($detect->isMobile() && !$detect->isTablet() && $_SESSION['layoutType'] == 'full' or $detect->isTablet() && $_SESSION['layoutType'] == 'full' or $_SESSION['layoutType'] == 'full'){
+} else if ($detect->isMobile() && !$detect->isTablet() && $_SESSION['layoutType'] == 'full' || $detect->isTablet() && $_SESSION['layoutType'] == 'full' || $_SESSION['layoutType'] == 'full'){
 
 	require($template->get_template_dir('tpl_header.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header.php');
 

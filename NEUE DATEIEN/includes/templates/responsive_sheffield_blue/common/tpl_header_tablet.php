@@ -11,10 +11,10 @@
  * $flag_disable_header = true;<br />
  *
  * @package templateSystem
- * @copyright Copyright 2003-2019 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_header_tablet.php for Sheffield Blue 2022-11-27 17:49:16Z webchills $
+ * @version $Id: tpl_header_tablet.php for Sheffield Blue 2024-10-09 17:49:16Z webchills $
  */
 ?>
 
@@ -23,10 +23,10 @@
   if ($messageStack->size('header') > 0) {
     echo $messageStack->output('header');
   }
-  if (isset($_GET['error_message']) && zen_not_null($_GET['error_message'])) {
+  if (!empty($_GET['error_message'])) {
     echo zen_output_string_protected(urldecode($_GET['error_message']));
   }
-  if (isset($_GET['info_message']) && zen_not_null($_GET['info_message'])) {
+  if (!empty($_GET['info_message'])) {
    echo zen_output_string_protected($_GET['info_message']);
   }
 ?>
@@ -96,18 +96,19 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
       } else {
         if (STORE_STATUS == '0') {
 ?>
-     <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa-solid fa-home" title="Home"></i><span class="tp-hide"><?php echo HEADER_TITLE_CATALOG; ?></span></a><span class="tp-hide"> | </span></li>
-    <li class="h-login"><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa-solid fa-arrow-right" title="Log In/Register"></i><span class="tp-hide"><?php echo HEADER_TITLE_LOGIN; ?></span></a><span class="tp-hide"> | </span></li>
+     <li><?php echo '<a href="' . HTTP_SERVER . DIR_WS_CATALOG . '">'; ?><i class="fa-solid fa-home" title="Home"></i></a></li>
+    <li class="h-login"><a href="<?php echo zen_href_link(FILENAME_LOGIN, '', 'SSL'); ?>"><i class="fa-solid fa-right-to-bracket" title="Log In/Register"></i></a></li>
 <?php } } ?>
 
 
-    <li><a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"><i class="fa-solid fa-shopping-cart" title="Shopping Cart"></i><?php echo $_SESSION['cart']->count_contents();?>  - <?php echo $currencies->format($_SESSION['cart']->show_total());?></a><span class="tp-hide"></span></li>
+   
 
    <?php if ($_SESSION['cart']->count_contents() != 0) { ?>
-<li> | <a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>"><i class="fa-solid fa-check-square" title="Checkout"></i><span class="tp-hide"><?php echo HEADER_TITLE_CHECKOUT; ?></span></a></li>
+<li> <a href="<?php echo zen_href_link(FILENAME_CHECKOUT_SHIPPING, '', 'SSL'); ?>"><i class="fa-solid fa-handshake" title="Checkout"></i></a></li>
 
 <?php }?>
 
+ <li><a href="<?php echo zen_href_link(FILENAME_SHOPPING_CART, '', 'NONSSL'); ?>"><i class="fa-solid fa-shopping-cart" title="Shopping Cart"></i><?php echo $_SESSION['cart']->count_contents();?>  - <?php echo $currencies->format($_SESSION['cart']->show_total());?></a></li>
 </ul>
 </div>
 </div>
@@ -115,8 +116,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 
 
 <div id="cur-lan-header" class="tp-hide">
-    <?php require(DIR_WS_MODULES . 'sideboxes/languages_header.php'); ?>
-    <?php require(DIR_WS_MODULES . 'sideboxes/currencies_header.php'); ?>
+
 </div>
 
 
@@ -189,7 +189,7 @@ if (RSB_SLIDER_STATUS == 'true') {
 <!--eof-optional categories tabs navigation display-->
 
 <!--bof-header ezpage links-->
-<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' and (strstr(EXCLUDE_ADMIN_IP_FOR_MAINTENANCE, $_SERVER['REMOTE_ADDR'])))) { ?>
+<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' && zen_is_whitelisted_admin_ip())) { ?>
 <?php require($template->get_template_dir('tpl_ezpages_bar_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_header.php'); ?>
 <?php } ?>
 <!--eof-header ezpage links-->

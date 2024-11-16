@@ -26,7 +26,7 @@ HR {margin-top: 0.5em;border:none;border-bottom:1px solid #dbdbce;margin-bottom:
 
 /*bof form elements*/
 CODE {font-family: arial, verdana, helvetica, sans-serif;font-size: 1em;}
-FORM, SELECT, INPUT {display: inline;margin: 0.1em;;}
+FORM, SELECT, INPUT {display: inline;margin: 0.1em;}
 TEXTAREA {margin: auto;display: block;width: 95%;border:1px solid #ddd;background:#ddddde;margin-top:10px;margin-bottom:10px;}
 input:focus, select:focus, textarea:focus {background: #fff;}
 input {border:1px solid #ddd;background:#ddddde;height:40px;margin-bottom:10px;padding-left:10px;width:40%;}
@@ -65,7 +65,7 @@ input[type=file]{width:100%;}
 .floatingBox, #accountLinksWrapper, #sendSpendWrapper, #checkoutShipto, #checkoutBillto, #navEZPagesTOCWrapper {margin:0;width:47%;}
 .wrapperAttribsOptions {margin:0.3em 0em;}
 #logoWrapper{}
-.centerColumn{background:#fff;padding:0 30px 50px 30px;margin-bottom:50px;}
+.centerColumn{background:#fff;padding:0 30px 20px 30px;}
 
 /*bof navigation*/
 .navNextPrevCounter {margin:0;font-size:0.9em;}
@@ -87,6 +87,13 @@ input[type=file]{width:100%;}
 #navMain ul li a:hover {color: #8db9fb;}
 #navMain i{margin-right:10px;color: #006da6;font-size:120%;vertical-align:middle;}
 #navMain i:hover{color:#fff;}
+#navMainWrapperTablet {margin:0 auto;}
+#navMainTablet ul  {margin:0 auto;padding: 0px 0 0.5em 0;list-style-type:none;text-align:right;line-height: 1.5em;float:right;width:100% !important;}
+#navMainTablet ul li {display:inline;}
+#navMainTablet ul li a {margin:0;padding:0em 0.5em;color: #444;text-decoration:none;white-space:nowrap;font-size:130%;}
+#navMainTablet ul li a:hover {color: #96c50b;}
+#navMainTablet i{margin-right:4px;color: #909e67;font-size:110%;vertical-align:middle;}
+#navMainTablet i:hover{color:#fff;}	
 #navEZPagesTop {background-color:#444;}
 #navEZPagesTop {margin:0;padding:0.5em;font-size:0.95em;font-weight:bold;color:#fffffd;}
 #navEZPagesTop a{color:#fffffd;}

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package Responsive Sheffield Blue 2.4.0
+ * @package Responsive Sheffield Blue
  * @copyright Copyright 2003-2022 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0

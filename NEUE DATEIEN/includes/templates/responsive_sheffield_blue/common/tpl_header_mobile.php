@@ -24,10 +24,10 @@
   if ($messageStack->size('header') > 0) {
     echo $messageStack->output('header');
   }
-  if (isset($_GET['error_message']) && zen_not_null($_GET['error_message'])) {
+  if (!empty($_GET['error_message'])) {
     echo zen_output_string_protected(urldecode($_GET['error_message']));
   }
-  if (isset($_GET['info_message']) && zen_not_null($_GET['info_message'])) {
+  if (!empty($_GET['info_message'])) {
    echo zen_output_string_protected($_GET['info_message']);
   }
 ?>
@@ -110,8 +110,9 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 
 <div id="header-nav">
 <div id="cur-lan-header">
-    <?php require(DIR_WS_MODULES . 'sideboxes/languages_header.php'); ?>
-    <?php require(DIR_WS_MODULES . 'sideboxes/currencies_header.php'); ?>
+ <div id="navMainSearch"><?php require(DIR_WS_MODULES . 'sideboxes/search_header.php'); ?></div>
+  <?php require($template->get_template_dir('tpl_search_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_search_header.php');?>
+   
 </div>
 
 
@@ -129,7 +130,7 @@ if (!isset($flag_disable_header) || !$flag_disable_header) {
 <!--eof-branding display-->
 <!--eof-header logo and navigation display-->
 
-<div id="navMainSearch"><?php require(DIR_WS_MODULES . 'sideboxes/search_header.php'); ?></div>
+
 
 
 
@@ -167,7 +168,7 @@ if (RSB_SLIDER_STATUS == 'true') {
 <!--eof-optional categories tabs navigation display-->
 
 <!--bof-header ezpage links-->
-<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' and (strstr(EXCLUDE_ADMIN_IP_FOR_MAINTENANCE, $_SERVER['REMOTE_ADDR'])))) { ?>
+<?php if (EZPAGES_STATUS_HEADER == '1' or (EZPAGES_STATUS_HEADER == '2' && zen_is_whitelisted_admin_ip())) { ?>
 <?php require($template->get_template_dir('tpl_ezpages_bar_header.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_ezpages_bar_header.php'); ?>
 <?php } ?>
 <!--eof-header ezpage links-->

@@ -22,13 +22,14 @@
 div#headerWrapper {}
 body{margin:0;padding:0;background:none;}
 #top-inner-wrapper{margin-left:10px;}
-#logo, #tagline{margin-left:10px;}
+#logo{margin-left:10px; margin-top:10px;}
 .ffCcol1{position:relative;left:20px;}
 #navSuppWrapper{margin:0;}
 #mobile-nav1{display:none;}
+#navMainWrapper{position:relative;z-index:10;margin-top:-60px;width:95%;float:right;}
 #home-images{margin:0 auto;width:99%;}
 .image_carousel .panel{height:auto !important;}
-.addthis_sharing_toolbox {margin-left:19%;width:80%;overflow:hidden;}
+div#logoWrapper {height:auto;}
 
 #top-middle{padding-top:0;background:none;}
 #top-middle .onerow-fluid{border-radius:0;}
@@ -78,7 +79,7 @@ a#foo2_next, a#foo1_next{right:0;}
 .banner span{font-size:140%;}
 #menu{width:100%;margin-top:-165px;}
 ul.slimmenu{position:relative;z-index:1000;background:#417db9;}
-#navMainWrapper{position:relative;z-index:10;margin-top:-70px;width:75%;float:right;}
+#navMainWrapper{position:relative;z-index:10;margin-top:-40px;width:75%;float:left;}
 #navMainSearch input[type=text]{width:140px;}
 .slide-out-div{top:230px !important;}
 .ad{max-width:220px;}
@@ -94,8 +95,8 @@ ul.slimmenu{position:relative;z-index:1000;background:#417db9;}
 #navSuppWrapper{margin:0;border:none;margin-top:80px;}
 #mobile-nav1{display:none;}
 .ffCcol4 .flexFooterColText{width:43%;margin:0 auto;}
-#cur-lan-header{float:left;top:30px;margin-left:10px;}
-#cur-lan-header1{float:left;top:30px;margin-left:10px;position:relative;}
+#cur-lan-header{float:left;top:2px;margin-left:10px;}
+#cur-lan-header1{float:left;top:5px;margin-left:10px;position:relative;}
 .currency_header{width:65%;}
 .lang_header{width:20%;}
 .content-slider{margin-top:0;}

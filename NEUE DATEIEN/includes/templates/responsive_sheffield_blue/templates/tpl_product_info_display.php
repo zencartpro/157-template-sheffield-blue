@@ -1,15 +1,15 @@
 <?php
 /**
  * Page Template
- * Zen Cart German Specific
+ * Zen Cart German Specific (zencartpro adaptations)
  * Loaded automatically by index.php?main_page=product_info.
  * Displays details of a typical product
  *
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_product_info_display.php for Sheffield Blue 2022-12-19 16:41:45Z webchills $
+ * @version $Id: tpl_product_info_display.php for Sheffield Blue 2024-10-09 16:41:45Z webchills $
 
  */
  //require(DIR_WS_MODULES . '/debug_blocks/product_info_prices.php');
@@ -51,7 +51,7 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <?php } ?>
 <!--eof Prev/Next top position-->
 
-<br class="clearBoth" />
+<br class="clearBoth">
 
 <!--bof Product Name-->
 <h1 id="productName" class="productGeneral"><?php echo $products_name; ?></h1>
@@ -60,19 +60,16 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 <div id="pi-left">
 <!--bof Main Product Image -->
 <?php
-  if (!empty($products_image)) {
+  if (!empty($products_image) || !empty($enable_additional_images_without_main_image)) {
   ?>
 <?php
 /**
  * display the main product image
  */
    require($template->get_template_dir('/tpl_modules_main_product_image.php',DIR_WS_TEMPLATE, $current_page_base,'templates'). '/tpl_modules_main_product_image.php'); ?>
-<?php
-  }
-?>
 <!--eof Main Product Image-->
 
-<br class="clearBoth" />
+<br class="clearBoth">
 
 <!--bof Additional Product Images -->
 <?php
@@ -84,7 +81,9 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 
 
 </div>
-
+<?php
+  }
+?>
 <div id="pi-right">
 <!--bof Product Price block -->
 <h2 id="productPrices" class="productGeneral">
@@ -133,7 +132,7 @@ require($template->get_template_dir('/tpl_products_next_previous.php',DIR_WS_TEM
 ?>
 <!--eof Quantity Discounts table -->
 
-
+</div>
 <!--bof Add to Cart Box -->
 <?php
 if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == '') {
@@ -211,6 +210,23 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
 </section>
 
             </div>
+<?php
+if ($flag_show_ask_a_question) {
+?>
+<!-- bof Ask a Question -->
+<br class="clearBoth">
+<span id="productQuestions" class="">
+<?php echo '<a href="' . zen_href_link(FILENAME_ASK_A_QUESTION, 'pid=' . $_GET['products_id'], 'SSL') . '">' . zen_image_button(BUTTON_IMAGE_ASK_A_QUESTION, BUTTON_ASK_A_QUESTION_ALT, ' id="askAQuestionButton"') . '</a>'; ?>
+</span>
+
+<br>
+<!-- eof Ask a Question -->
+<?php
+}
+?>
+<!--bof Cross Sells-->
+<?php include $template->get_template_dir('tpl_modules_xsell_products.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_xsell_products.php';?>
+<!--eof Cross Sells-->
         </div>
 
 
@@ -265,9 +281,7 @@ if (CUSTOMERS_APPROVAL == 3 and TEXT_LOGIN_FOR_PRICE_BUTTON_REPLACE_SHOWROOM == 
 ?>
 <!--eof Product URL -->
 
-<!--bof Cross Sells-->
-<?php include $template->get_template_dir('tpl_modules_xsell_products.php', DIR_WS_TEMPLATE, $current_page_base, 'templates') . '/tpl_modules_xsell_products.php';?>
-<!--eof Cross Sells-->
+
 <!--bof also purchased products module-->
 <?php require($template->get_template_dir('tpl_modules_also_purchased_products.php', DIR_WS_TEMPLATE, $current_page_base,'templates'). '/' . 'tpl_modules_also_purchased_products.php');?>
 <!--eof also purchased products module-->

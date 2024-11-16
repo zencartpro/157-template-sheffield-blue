@@ -2,16 +2,19 @@
 /**
  * Product Reviews
  *
- * @package page
- * @copyright Copyright 2003-2022 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: header_php.php for Sheffield Blue 2022-10-12 16:07:16Z webchills $
+ * @version $Id: header_php.php for Sheffield Blue 2024-10-08 16:07:16Z webchills $
  */
 
   // This should be first line of the script:
   $zco_notifier->notify('NOTIFY_HEADER_START_PRODUCT_REVIEWS');
+  // if no product specified, go to all reviews page
+  if (empty($_GET['products_id'])) {
+      zen_redirect(zen_href_link(FILENAME_REVIEWS)); 
+  }
 
 // check product exists and current
 // if product does not exist or is status 0 send to _info page
