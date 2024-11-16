@@ -7,10 +7,10 @@
  * Centerboxes are called as necessary
  *
  * @package templateSystem
- * @copyright Copyright 2003-2018 Zen Cart Development Team
+ * @copyright Copyright 2003-2024 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: tpl_index_default.php for Sheffield Blue 2018-04-04 15:49:16Z webchills $
+ * @version $Id: tpl_index_default.php for Sheffield Blue 2024-11-16 15:49:16Z webchills $
  */
 ?>
 
@@ -20,16 +20,6 @@
 <?php if (SHOW_CUSTOMER_GREETING == 1) { ?>
 <h2 class="greeting"><?php echo zen_customer_greeting(); ?></h2>
 <?php } ?>
-
-<!-- deprecated - to use uncomment this section
-<?php if (TEXT_MAIN) { ?>
-<div id="" class="content"><?php echo TEXT_MAIN; ?></div>
-<?php } ?>-->
-
-<!-- deprecated - to use uncomment this section
-<?php if (TEXT_INFORMATION) { ?>
-<div id="" class="content"><?php echo TEXT_INFORMATION; ?></div>
-<?php } ?>-->
 
 <?php if (DEFINE_MAIN_PAGE_STATUS >= 1 and DEFINE_MAIN_PAGE_STATUS <= 2) { ?>
 <?php

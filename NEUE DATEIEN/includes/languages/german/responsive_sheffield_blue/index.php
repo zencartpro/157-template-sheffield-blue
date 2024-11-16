@@ -25,6 +25,6 @@ define('TEXT_BUY','Kaufe 1 ');
 define('TEXT_NOW',' jetzt');
 define('HEADING_TITLE_PRODUCTS' , 'Verfügbare Artikel');
 
-define('HEADING_TITLE', '');
-define('HEADING_TITLE_NESTED', '');
+define('HEADING_TITLE', 'Willkommen in unserem Onlineshop!');
+define('HEADING_TITLE_NESTED', 'Willkommen in unserem Onlineshop!');
 define('TEXT_MAIN', '');

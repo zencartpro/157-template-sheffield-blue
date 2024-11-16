@@ -36,14 +36,14 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_main_page.php for Sheffield Blue 2024-10-09 16:49:16Z webchills $
+ * @version $Id: tpl_main_page.php for Sheffield Blue 2024-11-16 16:49:16Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
     die('Illegal Access');
 }
 
 // the following statements can be modified as needed to set additional flags
-  if (in_array($current_page_base,explode(",",'shopping_cart,checkout_shipping,checkout_payment,checkout_confirmation,checkout_success')) ) {
+  if (in_array($current_page_base,explode(",",'shopping_cart,checkout_shipping,checkout_payment,checkout_confirmation,checkout_success,create_account')) ) {
     $flag_disable_right = true;
     $flag_disable_left = true;
   }
@@ -57,7 +57,7 @@ if (!defined('IS_ADMIN_FLAG')) {
     $flag_disable_left = true;
   }
   
-  if (in_array($current_page_base,explode(",",'create_account,no_account,privacy,conditions,widerrufsrecht')) ) {
+  if (in_array($current_page_base,explode(",",'create_account,no_account,privacy,conditions,widerrufsrecht,products_new,specials,featured_products,products_all')) ) {
     $flag_disable_right = true;    
   }
 
@@ -271,7 +271,6 @@ if (!isset($flag_disable_left) || !$flag_disable_left) {
 </td>
 
 <?php
-//if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and $_SESSION['customer_id'] == '') || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_RIGHT_OFF == 'true' && $_SESSION['customers_authorization'] != 0)) {
 if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and !zen_is_logged_in()) || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_RIGHT_OFF == 'true' and ($_SESSION['customers_authorization'] != 0 or !zen_is_logged_in()))) {
   // global disable of column_right
   $flag_disable_right = true;
@@ -299,7 +298,6 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 
 
 <?php
-//if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and $_SESSION['customer_id'] == '') || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_RIGHT_OFF == 'true' && $_SESSION['customers_authorization'] != 0)) {
 if (COLUMN_RIGHT_STATUS == 0 || (CUSTOMERS_APPROVAL == '1' and !zen_is_logged_in()) || (CUSTOMERS_APPROVAL_AUTHORIZATION == 1 && CUSTOMERS_AUTHORIZATION_COLUMN_RIGHT_OFF == 'true' and ($_SESSION['customers_authorization'] != 0 or !zen_is_logged_in()))) {
   // global disable of column_right
   $flag_disable_right = true;
@@ -323,7 +321,7 @@ if (!isset($flag_disable_right) || !$flag_disable_right) {
 ?>
 </div>
 <?php } ?>
-
+<br class="clearBoth" /> 
 <?php
  /**
   * prepares and displays footer output

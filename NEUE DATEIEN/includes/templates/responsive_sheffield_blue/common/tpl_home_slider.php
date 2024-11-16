@@ -40,7 +40,7 @@
 
 <script src="<?php echo $template->get_template_dir('jquery.flexslider.js',DIR_WS_TEMPLATE, $current_page_base,'jscript') . '/jquery.flexslider.js' ?>" type="text/javascript"></script>
 <script type="text/javascript">
-$(window).load(function() {
+$(window).on('load', function() {
   $('.flexslider').flexslider({
     animation: "fade"
   

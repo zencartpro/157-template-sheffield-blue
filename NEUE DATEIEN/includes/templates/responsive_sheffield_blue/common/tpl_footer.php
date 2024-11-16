@@ -70,7 +70,7 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
 <div id="siteinfoLegal" class="legalCopyright"><?php echo FOOTER_TEXT_BODY; ?></div>
 <!--eof- site copyright display -->
 
-<!--bof sitemap, privacy, conditions -->
+<!--bof sitemap, privacy, conditions, impressum -->
 <div id="footer-bottom">
                        <?php if (DEFINE_SITE_MAP_STATUS <= 1) { ?>
                         <a href="<?php echo zen_href_link(FILENAME_SITE_MAP); ?>"><?php echo BOX_INFORMATION_SITE_MAP; ?></a>
@@ -80,10 +80,11 @@ if (!isset($flag_disable_footer) || !$flag_disable_footer) {
                         <?php } ?>
                         <?php if (DEFINE_CONDITIONS_STATUS <= 1) { ?>
                         <a href="<?php echo zen_href_link(FILENAME_CONDITIONS); ?>"><?php echo BOX_INFORMATION_CONDITIONS; ?></a>
+                        <?php } ?> 
+                        <?php if (DEFINE_IMPRESSUM_STATUS <= 1) { ?>
+                        <a href="<?php echo zen_href_link(FILENAME_IMPRESSUM); ?>"><?php echo BOX_INFORMATION_IMPRESSUM; ?></a>
                         <?php } ?>
-
-</div>
-<!--eof sitemap, privacy, conditions -->
+<!--eof sitemap, privacy, conditions, impressum -->
 
 
 

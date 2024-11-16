@@ -24,6 +24,11 @@ HR {margin-top: 0.5em;border:none;border-bottom:1px solid #dbdbce;margin-bottom:
     flex-wrap: wrap;
 }
 
+#indexDefaultHeading{
+	text-align:center;
+	margin:15px 0 15px 0;
+}
+
 /*bof form elements*/
 CODE {font-family: arial, verdana, helvetica, sans-serif;font-size: 1em;}
 FORM, SELECT, INPUT {display: inline;margin: 0.1em;}
@@ -593,7 +598,9 @@ table{border:none;padding:0;margin:0; border-spacing:0;border-collapse:collapse;
 .accountOrderId {width:30px;}
 .accountOrderDate, .accountOrderStatus, .accountOrderTotal {width:70px;}
 #seQuoteResults {width: 100%;}
-#seQuoteResults td {border: 1px solid black;}
+#seQuoteResults td {}
+.listBoxContentTable {width:100%;}
+.listBoxContentTable td {}
 .listBoxContentTable {width:100%;}
 .listBoxContentTable td {border: 1px solid black;}
 #upcomingProductsTable {width: 100%;}
