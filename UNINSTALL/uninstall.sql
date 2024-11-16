@@ -39,11 +39,9 @@ DELETE FROM admin_pages WHERE page_key='flexibleFooterMenu';
 
 DELETE FROM banners WHERE banners_group = 'homepageslide';
 
-DELETE FROM configuration_group WHERE configuration_group_title = 'Winchester Responsive Template Configuration';
-DELETE FROM configuration_group WHERE configuration_group_title = 'Winchester Responsive Template Konfiguration';
+DELETE FROM configuration_group WHERE configuration_group_title = 'Sheffield Blue';
 
 DELETE FROM admin_pages WHERE page_key='configSheffieldBlue';
-
 
 
 UPDATE configuration SET configuration_value = 60 WHERE configuration_key = 'IMAGE_SHOPPING_CART_WIDTH';

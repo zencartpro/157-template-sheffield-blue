@@ -2,13 +2,15 @@
 /** Academe Template - currencies_header.php
  *
  * @copyright Copyright 2007 iChoze Internet Solutions http://ichoze.com
- * @copyright Portions Copyright 2003-2018 Zen Cart Development Team
+ * @copyright Portions Copyright 2003-2024 Zen Cart Development Team
  * @copyright Portions Copyright 2003 osCommerce
  * @license http://www.zen-cart-pro.at/license/2_0.txt GNU Public License V2.0
- * @version $Id: currencies_header.php 2018-06-28 12:16:37Z webchills $
+ * @version $Id: currencies_header.php 2024-11-16 12:16:37Z webchills $
  */
+ 
+ $show_currencies_header= false;
 
-$cur_header_status = $db->Execute('select layout_box_name from ' . TABLE_LAYOUT_BOXES . " where (layout_box_status=1 or layout_box_status_single=1) and layout_template ='" . $template_dir . "' and layout_box_name='currencies_header.php'");
+$cur_header_status = $db->Execute("select layout_box_name from " . TABLE_LAYOUT_BOXES . " where (layout_box_status=1 or layout_box_status_single=1) and layout_template ='" . $template_dir . "' and layout_box_name='currencies_header.php'");
 
   if ($cur_header_status->RecordCount() != 0) {
     $show_currencies_header= true;
