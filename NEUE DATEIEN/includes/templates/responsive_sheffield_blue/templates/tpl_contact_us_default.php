@@ -67,7 +67,7 @@
 ?>
 
 <label class="inputLabel" for="subject"><?php echo ENTRY_EMAIL_SUBJECT; ?></label>
-<?php echo zen_draw_input_field('subject', $subject, ' size="40" id="subject" placeholder="' . ENTRY_REQUIRED_SYMBOL . '" required'); ?>
+<?php echo zen_draw_input_field('subject', ($subject), ' size="40" id="subject" placeholder="' . ENTRY_REQUIRED_SYMBOL . '" required'); ?>
 <br class="clearBoth">
 
 <label class="inputLabel" for="contactname"><?php echo ENTRY_NAME; ?></label>

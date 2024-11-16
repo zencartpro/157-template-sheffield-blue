@@ -187,7 +187,7 @@ input[type=file]{width:100%;}
 .attribImg {margin:0.3em 0;width:20%;}
 
 /*bof list box contents*/
-.centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured, .centerBoxContentsNew {margin: 1em 0;}
+.centerBoxContents, .specialsListBoxContents, .categoryListBoxContents, .additionalImages, .centerBoxContentsSpecials, .centerBoxContentsAlsoPurch, .centerBoxContentsFeatured {margin: 1em 0;}
 
 /*bof sideboxes*/
 #navColumnOne {background-color:#fff;}
@@ -198,7 +198,7 @@ h3.leftBoxHeading a, h3.rightBoxHeading a{color:#fff;font-weight:normal !importa
 .centerBoxHeading{margin:50px 0 20px 0px;padding:10px 0px 10px 20px;background:#fff;color:#000;font-size:150%;}
 .leftBoxContainer, .rightBoxContainer {margin:1.5em 0 20px 0;}
 .rightBoxContainer{margin-right:-6px;}
-.sideBoxContentItem, #reviewsContent{margin:20px 0 20px 0;}
+.sideBoxContentItem, #reviewsContent{margin: 0; max-height:270px;}
 .sideBoxContentItem a, #reviewsContent a{font-weight:normal;clear:both;margin-bottom:20px;padding-bottom:10px;}
 .box-title a{color:#000;}
 .box-title{margin:0 auto 10px auto;width:90%;}
@@ -286,7 +286,7 @@ div#productsListingListingBottomLinks{margin-top:10px;}
 .more-info{float:left;}
 .more-info a{color:#fff;}
 
-.centerBoxContentsAlsoPurch, .centerBoxContentsProducts, .centerBoxContentsNew, .centerBoxContentsFeatured, .centerBoxContentsSpecials{border:1px solid #dbdbce;background:#f7f7f7;padding:20px 0px;width:30% !important;transition:background 2s ease; -webkit-transition:background 2s ease;-moz-transition: background 2s ease;  -o-transition:background 2s ease;text-align:center;margin-left:15px;margin-bottom:20px;min-height:480px;}
+.centerBoxContentsAlsoPurch, .centerBoxContentsProducts, .centerBoxContentsNew, .centerBoxContentsFeatured, .centerBoxContentsSpecials{border:1px solid #dbdbce;background:#f7f7f7;padding:20px 0px;width:30% !important;transition:background 2s ease; -webkit-transition:background 2s ease;-moz-transition: background 2s ease;  -o-transition:background 2s ease;text-align:center;margin-left:15px;margin-bottom:20px;min-height:280px;}
 .listingProductImage{margin:0 auto;}
 .centerBoxContentsAlsoPurch:hover, .centerBoxContentsProducts:hover, .centerBoxContentsNew:hover, .centerBoxContentsFeatured:hover, .centerBoxContentsSpecials:hover{border:1px solid #dbdbce;background:#f4f4f4;}
 .itemTitle{font-weight:normal;color:#787878;min-height:50px;padding-left:20px;padding-right:20px;}
