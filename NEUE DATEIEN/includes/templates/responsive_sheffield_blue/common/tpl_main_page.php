@@ -36,7 +36,7 @@
  * Zen Cart German Version - www.zen-cart-pro.at
  * @copyright Portions Copyright 2003 osCommerce
  * @license https://www.zen-cart-pro.at/license/3_0.txt GNU General Public License V3.0
- * @version $Id: tpl_main_page.php for Sheffield Blue 2024-11-16 16:49:16Z webchills $
+ * @version $Id: tpl_main_page.php for Sheffield Blue 2024-11-17 16:49:16Z webchills $
  */
 if (!defined('IS_ADMIN_FLAG')) {
     die('Illegal Access');
@@ -166,7 +166,7 @@ if (!isset($flag_disable_left) || !$flag_disable_left) {
   }
 
 
-	if ($detect->isMobile() && !$detect->isTablet() || $detect->isMobile() && !$detect->isTablet() && $_SESSION['layoutType'] == 'mobile' || $detect->isTablet() && $_SESSION['layoutType'] == 'mobile' or $_SESSION['layoutType'] == 'mobile') {
+	if ($detect->isMobile() && !$detect->isTablet() || $detect->isMobile() && !$detect->isTablet() && $_SESSION['layoutType'] == 'mobile' || $detect->isTablet() && $_SESSION['layoutType'] == 'mobile' || $_SESSION['layoutType'] == 'mobile') {
 
     	require($template->get_template_dir('tpl_header_mobile.php',DIR_WS_TEMPLATE, $current_page_base,'common'). '/tpl_header_mobile.php');
 
